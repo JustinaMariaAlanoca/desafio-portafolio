@@ -1,0 +1,870 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #bfd8bd;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+@media screen and (min-width:0) {
+    .cabecera {
+        padding: 1rem 1rem;
+        justify-content: center;
+        font-size: 11px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .cabecera {
+        padding: 1rem 5rem;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+}
+
+.logo-estrella {
+    padding: 0 20px;
+}
+
+
+.titulo-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+@media screen and (min-width:0) {
+    .titulo-logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .titulo-logo {
+        display: flex;
+    }
+}
+
+.nombre {
+    display: flex;
+    padding-left: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.menu-lista {
+    display: flex;
+
+}
+
+.menu-link {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin-right: 1.25rem;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.menu-link.activo {
+    color: black;
+    font-weight: bold;
+}
+
+.container-datos-personales {
+    display: flex;
+    background-color: #d8f3dc;
+    padding: 50px 30px;
+    gap: 50px;
+
+}
+
+@media screen and (min-width:0) {
+    .container-datos-personales {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container-datos-personales {
+        flex-direction: row;
+        padding: 150px 30px;
+    }
+}
+
+
+.datos-personales {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+
+}
+
+@media screen and (min-width:0) {
+    .datos-personales {
+        order: 2;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .logo {
+        order: 2;
+    }
+}
+
+.presentacion {
+    /* font-size: 40px; */
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+@media screen and (min-width:0) {
+    .presentacion {
+        font-size: 30px;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .presentacion {
+        font-size: 40px;
+
+    }
+}
+
+.profesion {
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    line-height: 35px;
+}
+
+@media screen and (min-width:0) {
+    .profesion {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .profesion {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+.menu-links {
+    font-size: 20px;
+    padding-left: 30px;
+    margin-right: 20px;
+}
+
+@media screen and (min-width:0) {
+    .menu-links {
+        font-size: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        line-height: 2rem;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .menu-links {
+        font-size: 20px;
+        padding-left: 30px;
+        margin-right: 20px;
+
+    }
+}
+
+.links {
+    list-style: none;
+    text-decoration: none;
+    margin: 13px;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: auto;
+    text-align: center;
+
+}
+
+.logo-perfil {
+    width: 300px;
+    border-radius: 50%;
+}
+
+
+.container-sobre-mi {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 30px;
+    background-color: #bfd8bd;
+
+}
+
+
+.sobre-mi {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 30px;
+
+
+}
+
+@media screen and (min-width:0) {
+    .sobre-mi {
+        font-size: 30px;
+        text-align: center;
+
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .sobre-mi {
+        font-size: 40px;
+        text-align: start;
+
+    }
+}
+
+.sobre-mi-descripcion {
+    font-size: 25px;
+    color: black;
+    line-height: 35px;
+    width: 70%;
+    padding: 30px 30px;
+
+}
+
+@media screen and (min-width:0) {
+    .sobre-mi-descripcion {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0 20px 0 20px;
+        width: 100%;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .sobre-mi-descripcion {
+        font-size: 25px;
+        width: 70%;
+        text-align: start;
+
+    }
+}
+
+.imagen-firma {
+    padding-left: 30px;
+
+}
+
+@media screen and (min-width:0) {
+    .imagen-firma {
+        padding-top: 0%;
+        padding-left: 40%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .imagen-firma {
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+}
+
+.container-skills {
+    width: auto;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 30px;
+    background-color: #d8f3dc;
+
+}
+
+@media screen and (min-width:0) {
+    .container-skills {
+        padding: 50px 15px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container-skills {
+        padding: 100px 30px;
+    }
+
+}
+
+.titulo-skills {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 40px 10px;
+}
+
+.lista-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 10px;
+
+}
+@media screen and (min-width:0) {
+    .lista-skills {
+        gap: 10px;
+    }
+}
+@media screen and (min-width:768px) {
+    .lista-skills {
+        gap: 30px;
+    }
+}
+
+.item-skills {
+    border-radius: 30px;
+
+}
+
+@media screen and (min-width:0) {
+    .item-skills {
+        width: 125px;
+        height: 125px;
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .item-skills {
+        width: 175px;
+        height: 175px;
+    }
+
+}
+
+.container-hobbies {
+    width: auto;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 30px;
+    background-color: #bfd8bd;
+
+}
+
+@media screen and (min-width:0) {
+    .container-hobbies {
+        padding: 50px 15px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container-hobbies {
+        padding: 100px 30px;
+    }
+
+}
+
+.titulo-hobbies {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 40px 10px;
+}
+
+.lista-hobbies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 10px;
+
+}
+@media screen and (min-width:0) {
+    .lista-hobbies{
+        gap: 10px;
+    }
+}
+@media screen and (min-width:768px) {
+    .lista-hobbies{
+        gap: 30px;
+    }
+}
+.item-hobbies {
+    border-radius: 30px;
+
+}
+
+@media screen and (min-width:0) {
+    .item-hobbies {
+        width: 125px;
+        height: 125px;
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .item-hobbies {
+        width: 175px;
+        height: 175px;
+    }
+
+}
+
+.container-formacion-academica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #d8f3dc;
+    width: auto;
+    height: 600px;
+    padding: 100px 30px;
+}
+
+@media screen and (min-width:0) {
+    .container-formacion-academica {
+        padding: 50px 10px;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container-formacion-academica {
+        padding: 100px 30px;
+
+    }
+
+}
+
+.titulo-formacion-academica {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width:0) {
+    .titulo-formacion-academica {
+        font-size: 30px;
+        padding-top: 50px;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .titulo-formacion-academica {
+        font-size: 40px;
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+}
+
+.lista-institución {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 30px;
+    padding-top: 40px;
+    width: 170px;
+
+}
+
+@media screen and (min-width:0) {
+    .lista-institución {
+        align-items: center;
+        padding-left: 20px;
+       
+    }
+}
+
+@media screen and (min-width:768px) {
+    .lista-institución {
+        justify-content: center;
+     
+    }
+}
+
+.img-instituciones {
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+}
+
+@media screen and (min-width:0) {
+    .img-instituciones {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .img-instituciones {
+        width: 250px;
+        height: 250px;
+        padding: 30px;
+    }
+}
+
+.container-experiencia-profesional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 600px;
+    padding: 100px 30px;
+    background-color: #bfd8bd;
+}
+
+@media screen and (min-width:0) {
+    .container-experiencia-profesional {
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container-experiencia-profesional {
+        padding: 100px 30px;
+
+    }
+}
+
+.titulo-experiencia-profesional {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width:0) {
+    .titulo-experiencia-profesional {
+        font-size: 30px;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .titulo-experiencia-profesional {
+        font-size: 40px;
+    }
+}
+
+.encriptador {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    gap: 16px;
+
+}
+
+@media screen and (min-width:0) {
+    .encriptador {
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .encriptador {
+        flex-direction: row;
+    }
+}
+
+.imagen-encriptador {
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
+
+}
+
+@media screen and (min-width:0) {
+    .imagen-encriptador {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .imagen-encriptador {
+        width: 500px;
+        height: 350px;
+    }
+}
+
+.encriptador-de-texto {
+    line-height: 1.5rem;
+    padding-top: 250px;
+}
+
+@media screen and (min-width:0) {
+    .encriptador-de-texto {
+        padding-top: 30px;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .encriptador-de-texto {
+        padding-top: 250px;
+    }
+}
+
+.titulo-encriptador {
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+}
+
+.titulo-challenge {
+    font-weight: 500;
+    padding-bottom: 10px;
+
+}
+
+.boton-repositorio {
+    border-radius: 4.5px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 100;
+    cursor: pointer;
+    background-color: #bfd8bd;
+
+}
+
+.boton-demo {
+    border-radius: 4.5px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 100;
+    cursor: pointer;
+    background-color: white;
+}
+
+.container-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 100px 30px;
+    height: 500px;
+    background-color: #d8f3dc;
+}
+
+@media screen and (min-width:0) {
+    .container-contacto {
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+        padding: 80px 10px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container-contacto {
+        flex-direction: row;
+        gap: 16px;
+        height: 500px;
+    }
+}
+
+.imagen-contacto {
+    display: flex;
+    border: 5px;
+}
+
+.imagen-telefono {
+    width: 300px;
+    height: 400px;
+}
+
+@media screen and (min-width:0) {
+    .imagen-telefono {
+        width: 100px;
+        height: 150px;
+        align-items: center;
+    
+    }
+}
+
+@media screen and (min-width:768px){
+    .imagen-telefono{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    gap: 10px;
+}
+@media screen and (min-width:0){
+    .formulario-contacto{
+        width: 350px;
+        height: 500px;
+        gap: 5px;
+        padding: 10px 10px;
+    
+    }
+}
+
+@media screen and (min-width:768px){
+    .formulario-contacto{
+        padding-top: 20px;
+        padding-left: 20px;
+        gap: 10px;
+    }
+}
+
+.titulo-contacto {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: black;
+
+}
+
+.pregunta-contacto {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.completar-formulario {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 15px;
+
+}
+
+
+
+#text-area-contacto {
+    width: 500px;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 5px;
+    border-radius: 3.5px;
+    border: none;
+
+}
+@media screen and (min-width:0){
+    #text-area-contacto{
+        width: 333px;
+        height: 25px;
+
+    }
+}
+@media screen and (min-width:768px){
+    #text-area-contacto{
+        width:500px;
+        height: 40px;
+
+    }
+}
+
+#text-area-contacto-mensaje{
+    width: 500px;
+    height: 80px;
+    font-size: 15px;
+    padding-left: 5px;
+    border-radius: 3.5px;
+    border: none;
+}
+
+@media  screen and (min-width:0){
+    #text-area-contacto-mensaje{
+        width: 333px;
+        height: 80px;
+    }
+}
+
+@media  screen and (min-width:768px){
+    #text-area-contacto-mensaje{
+        width: 500px;
+        height: 80px;
+    }
+}
+.boton-enviar {
+    border-radius: 3.5px;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 100;
+    cursor: pointer;
+    background-color: #95d5b2;
+}
+
+.diseñador {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    padding: 30px;
+    background-color: #bfd8bd;
+}
+
+@media screen and (min-width:0) {
+    .diseñador {    
+        padding: 5px 2px;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .diseñador {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="titulo-logo">
+            <img class="logo-estrella" src="logo-estrellas.png">
+            <p class="nombre">Justina Maria Alanoca Condori</p>
+        </div>
+
+        <nav class="menu-lista" id="menu-lista">
+            <a class="menu-link" href="#datos-sobre-mi">Sobre mi</a>
+            <a class="menu-link" href="#container-habilidades">Skills</a>
+            <a class="menu-link" href="#container-hobbies">Hobbies</a>
+            <a class="menu-link" href="#container-formación-academica">Formación</a>
+            <a class="menu-link" href="#container-experiencia-profesional">Experiencia</a>
+            <a class="menu-link activo" href="#container-contacto">Contacto</a>
+        </nav>
+    </header>
+    <div class="container-datos-personales">
+        <div class="datos-personales">
+            <div>
+                <h2 class="presentacion">Hola, mi nombre es Justina Maria y construyo páginas web</h2>
+            </div>
+            <div>
+                <p class="profesion">Soy Ingeniero de Sistemas y Cómputo, con experiencia en ejecución de Proyectos de Inversión Pública y actualmente estoy participando como estudiante del
+                    Proyecto Oracle ONE G5 de Alura Latam</p>
+            </div>
+            <div>
+                <nav class="menu-links">
+                    <a class="links" href="#">Github</a>
+                    <a class="links" href="#">Linkedin</a>
+                    <a class="links" href="#">Instagram</a>
+                    <a class="links" href="#">Curriculo</a>
+                </nav>
+            </div>
+        </div>
+        <div class="logo">
+            <img class="logo-perfil" src="perfil.jpg" alt="">
+        </div>
+    </div>
+    <div class="container-sobre-mi" id="datos-sobre-mi">
+        <div>
+            <h3 class="sobre-mi">Sobre mi</h3>
+        </div>
+        <div>
+            <p class="sobre-mi-descripcion">Soy Ingeniero de Sistemas y Cómputo, tengo experiencia en ejecución de
+                Proyectos de Inversión Pública y Administracion de Programas Sociales, con alto sentido de
+                responsabilidad, capacidad de trabajo en equipo, compromiso con las metas y objetivos señalados y con
+                muchas ganas de asumir nuevos retos.</p>
+        </div>
+        <div>
+            <img class="imagen-firma" src="image-firma.png" alt="">
+        </div>
+    </div>
+    <div class="container-skills" id="container-habilidades">
+        <h4 class="titulo-skills">Skills</h4>
+        <div class="lista-skills">
+            <img class="item-skills" src="Skill.png" alt="">
+            <img class="item-skills" src="Skill (1).png" alt="">
+            <img class="item-skills" src="Skill (2).png" alt="">
+            <img class="item-skills" src="Skill.png" alt="">
+            <img class="item-skills" src="Skill (1).png" alt="">
+            <img class="item-skills" src="Skill (2).png" alt="">
+        </div>
+    </div>
+
+    <div class="container-hobbies" id="container-hobbies">
+        <h5 class="titulo-hobbies">Hobbies</h5>
+        <div class="lista-hobbies">
+            <img class="item-hobbies" src="Skill (3).png" alt="">
+            <img class="item-hobbies" src="Skill (4).png" alt="">
+            <img class="item-hobbies" src="Skill (5).png" alt="">
+            <img class="item-hobbies" src="Skill (6).png" alt="">
+            <img class="item-hobbies" src="Skill (3).png" alt="">
+            <img class="item-hobbies" src="Skill (4).png" alt="">
+
+        </div>
+    </div>
+    <div class="container-formacion-academica" id="container-formación-academica">
+        <h5 class="titulo-formacion-academica">Formación Académica</h5>
+        <div class="lista-institucion">            
+            <img class="img-instituciones" src="imagen-uigv.jpg" alt="">
+            <img class="img-instituciones" src="imagen-upt.png" alt="">
+            <img class="img-instituciones" src="Imagen-alura.png" alt="">
+        </div>
+    </div>
+    <div class="container-experiencia-profesional" id="container-experiencia-profesional">
+        <h6 class="titulo-experiencia-profesional">Experiencia Profesional</h6>
+        <div class="encriptador">
+            <img class="imagen-encriptador" src="imagen-encriptador.jpg" alt="imagen-encriptador-textos">
+            <div class="encriptador-de-texto">
+                <p class="titulo-encriptador">Encriptador de texto</p>
+                <p class="titulo-challenge">Challenge Oracle</p>
+                <button class="boton-repositorio" onclick="boton-repositorio">Repositorio</button>
+                <button class="boton-demo" onclick="boton-demo">Ver demo</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-contacto" id="container-contacto">
+        <div class="imagen-contacto">
+            <img class="imagen-telefono" src="imagen-telefono.png" alt="logo-telefono">
+        </div>      
+        <div class="formulario-contacto">
+            <div class="contenido-contacto">
+                <h1 class="titulo-contacto">Contacto</h1>
+                <p class="pregunta-contacto">¿Quieres contactarme?</p>
+                <p class="completar-formulario">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+            </div>
+            <form class="text-area">
+                <textarea name="text" id="text-area-contacto" cols="30" rows="10" placeholder="Nombre"></textarea>
+                <textarea name="text" id="text-area-contacto" cols="30" rows="10" placeholder="Correo Electrónico"></textarea>
+                <textarea name="text" id="text-area-contacto" cols="30" rows="10" placeholder="Asunto"></textarea>
+                <textarea name="text" id="text-area-contacto-mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button class="boton-enviar">Enviar</button>
+            </form>
+                            
+        </div>
+    </div>
+    <footer class="diseñador">
+        <p>Desarrollado por: Justina Maria Alanoca Condori</p>
+        <p>Año - 2023</p>
+    </footer>
+</body>
+
+</html>
